@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.road{
+    background-image: url(/IMAGES/BG\ IMG.avif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height:600px;
+    width: 1500px;
+    overflow: hidden;
+}
+.taxiF{
+    position: absolute;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    top: 400px;
+    animation: car 5s ease-in infinite;
+}
+@keyframes car{
+    from{
+        left:-100px
+    }
+    to{
+        left:1300px
+    }
+}
+
+.taxiM{
+    position: absolute;
+    background-color: transparent;
+    height: 10px;
+    width: 10px;
+    top: 140px;
+    animation: carS 5s ease-in infinite;
+}
+@keyframes carS{
+    from{
+        right:10px
+    }
+    to{
+        right:1300px
+    }
+}
